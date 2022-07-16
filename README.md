@@ -4,7 +4,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/nooqta/kodyfire/blob/main/LICENSE)
 [![Twitter: anis\_marrouchi](https://img.shields.io/twitter/follow/anis\_marrouchi.svg?style=social)](https://twitter.com/anis\_marrouchi)
 
-> Generate a dynamic image for social media sharing based on HTML template using Kodyfire cli
+> Generate a dynamic image for social media sharing based on HTML templates using Kodyfire cli
 ![social-image-kodyfire demo](social-image-kodyfire.gif)
 ### 🏠 [Homepage](https://github.com/nooqta/kodyfire)
 
