@@ -48,7 +48,7 @@ TODO
 
 Contributions, issues and feature requests are welcome!
 
-Feel free to check [issues page](https://github.com/nooqta/social-image-kodyfire/issues). 
+Feel free to check [issues page](https://github.com/anis-marrouchi/social-image-kodyfire/issues). 
 
 ## Show your support
 
