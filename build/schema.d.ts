@@ -10,14 +10,20 @@ export declare const concept: {
         };
         fontWeight: {
             type: string;
-            enum: (string | number)[];
-            default: number;
+            enum: string[];
+            default: string;
         };
         fontSize: {
             type: string;
             default: string;
         };
         title: {
+            type: string;
+        };
+        subtitle: {
+            type: string;
+        };
+        eyebrow: {
             type: string;
         };
         logo: {
@@ -64,14 +70,20 @@ export declare const conceptArray: {
             };
             fontWeight: {
                 type: string;
-                enum: (string | number)[];
-                default: number;
+                enum: string[];
+                default: string;
             };
             fontSize: {
                 type: string;
                 default: string;
             };
             title: {
+                type: string;
+            };
+            subtitle: {
+                type: string;
+            };
+            eyebrow: {
                 type: string;
             };
             logo: {
@@ -131,14 +143,20 @@ export declare const schema: {
                     };
                     fontWeight: {
                         type: string;
-                        enum: (string | number)[];
-                        default: number;
+                        enum: string[];
+                        default: string;
                     };
                     fontSize: {
                         type: string;
                         default: string;
                     };
                     title: {
+                        type: string;
+                    };
+                    subtitle: {
+                        type: string;
+                    };
+                    eyebrow: {
                         type: string;
                     };
                     logo: {

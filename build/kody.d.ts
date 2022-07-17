@@ -27,14 +27,20 @@ export declare class Kody extends BaseKody {
                         };
                         fontWeight: {
                             type: string;
-                            enum: (string | number)[];
-                            default: number;
+                            enum: string[];
+                            default: string;
                         };
                         fontSize: {
                             type: string;
                             default: string;
                         };
                         title: {
+                            type: string;
+                        };
+                        subtitle: {
+                            type: string;
+                        };
+                        eyebrow: {
                             type: string;
                         };
                         logo: {

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en"> <!-- Set this to the main language of your site -->
+<head>
+    <meta charset="utf-8">
+
+    <title>{{title}}</title>
+
+    <!-- Enter a brief description of your page -->
+    <meta name="description" content="">
+
+    <!-- Define a viewport to mobile devices to use - telling the browser to assume that the page is as wide as the device (width=device-width,
+    and setting the initial page zoom level to be 1 (initial-scale=1.0), and fixing width=device-width for iOS9 (shtink-to-fit=no) -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+
+    <!-- Add normalize.css which enables browsers to render all elements more consistently and in line with modern standards as it only targets particular styles that need normalizing -->
+    {{!-- <link href="css/normalize.css" rel="stylesheet" media="all"> --}}
+    <!-- For legacy support (IE 6/7, Firefox < 4, and Safari < 5) use normalize-legacy.css instead -->
+    <!--<link href="css/normalize-legacy.css" rel="stylesheet" media="all">-->
+
+    <!-- Include the site stylesheet -->
+    {{#if googleFont}}
+        <link href="https://fonts.googleapis.com/css?family={{googleFont}}:400,500,600,700,800,900&display=swap" rel="stylesheet">
+      {{/if}}
+    {{#if css }}
+    {{#each css}}
+    <link href="{{this}}" rel="stylesheet" media="all">
+    {{/each}}
+    
+    {{/if}}
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        background: transparent;
+        font-family:{{#if fontFamily}} {{{fontFamily}}}{{else}}"Lato", "Helvetica Neue", sans-serif{{/if}};
+        overflow: hidden;
+        /* width: {{width}}px;
+        height: {{height}}px; */
+        width: 100vw;
+        height: 100vh;
+      }
+      .Image {
+  width: 100%;
+  height: 100%;
+  background-size: cover;  
+  background-repeat: no-repeat;
+  background-origin: center;
+}
+
+.Main {
+  background: {{#if imageUrl}} transparent {{else}}{{background}}{{/if}};
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.Inner {
+  background: {{#if imageUrl}} transparent {{else}} {{ background }}{{/if}};
+  color: {{color}};
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.Content {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+      }
+
+      .Content-inner {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        padding: 64px;
+        padding-top: 48px;
+      }
+
+      .Eyebrow {
+        font-size: 24px;
+        font-weight: 600;
+        margin-bottom: 8px;
+      }
+
+      .Content-watermark {
+        display: flex;
+        height: 100%;
+      }
+
+      .Content-watermarkInner {
+        border-top: 1px solid lightgrey;
+        font-size: 32px;
+        align-self: flex-end;
+        opacity: 0.8;
+        width: 100%;
+        padding-top: 32px;
+      }
+
+      .logo {
+        height: 100%;
+      }
+
+      .logo img {
+        height: 100px;
+        padding-bottom: 16px;
+      }
+
+      h1,
+      h2 {
+        margin: 0;
+        padding: 0;
+        font-weight: 400;
+        line-height: 1.2;
+      }
+
+      h1 {
+        font-size: 96px;
+        font-weight: 700;
+        margin-bottom: 8px;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+      }
+
+      h2 {
+        font-size: 40px;
+        display: -webkit-box;
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+      }
+    </style>
+</head>
+<body>
+  <div class="Main">
+        {{#if imageUrl}}
+          <div class="Image" style="background-image: {{#if backgroundImageOverlay}}linear-gradient(180deg, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.6) 100%), {{/if}}url('{{imageUrl}}');"></div>
+        {{/if}}
+
+        <div class="Inner">
+          <div class="Content">
+        <div class="Content-inner">
+          <div class="logo">
+            <div class="logo-inner">
+              {{#if logo}}<img src="{{logo}}" />{{/if}}
+            </div>
+          </div>
+          <div class="Content-body">
+            {{#if eyebrow}}<div class="Eyebrow">{{eyebrow}}</div>{{/if}}
+            <h1><strong>{{title}}</strong></h1>
+            {{#if subtitle}}<h2>{{subtitle}}</h2>{{/if}}
+          </div>
+          <div class="Content-watermark">
+            {{#if watermark}}
+              <div class="Content-watermarkInner">
+                {{watermark}}
+              </div>
+            {{/if}}
+          </div>
+        </div>
+      </div>
+        </div>
+      </div>
+      </body>
+</html>
