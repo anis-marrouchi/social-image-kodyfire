@@ -81,7 +81,6 @@ kody run -s kody-social-image.json
 
 Add the following params to your generated concepts. As an example, the final updated concepts might look like the following:
 ```json
-...
 {
       "name": "image-3",
       "template": "fiftyfifty.html.template",
