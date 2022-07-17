@@ -81,7 +81,7 @@ class Engine extends basic_kodyfire_1.Engine {
             yield fsPromises.writeFile((0, path_1.join)(rootDir, outputDir, filename), content);
         });
     }
-    createOrOverwriteImage(rootDir, outputDir, filename, content, size = "twitter", 
+    createOrOverwriteImage(rootDir, outputDir, filename, content, size = "twitter", debug = true, 
     // @todo allow to overwrite
     overwrite = false) {
         return __awaiter(this, void 0, void 0, function* () {
@@ -113,6 +113,10 @@ class Engine extends basic_kodyfire_1.Engine {
                 path: filename,
                 omitBackground: true
             });
+            // if debug is enabled, save the html
+            if (debug) {
+                yield fsPromises.writeFile(filename.replace('png', 'html'), content);
+            }
             yield browser.close();
         });
     }

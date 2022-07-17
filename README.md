@@ -91,7 +91,7 @@ Add the following params to your generated concepts. As an example, the final up
       "subtitle": "Your subtitle",
       "eyebrow": "17 July 2022",
       "logo": "https://noqta.tn/_next/image?url=%2Fimages%2Flogo.svg&w=256&q=75",
-      "background": "#fff",
+      "background": "tranparent",
       "imageUrl": "https://images.unsplash.com/photo-1507608869274-d3177c8bb4c7?w=1950&q=80",
       "color": "#000",
       "includeWatermark": true,

@@ -69,6 +69,7 @@ export class Engine extends BaseEngine {
     filename: any,
     content: string | Buffer,
     size = "twitter",
+    debug = true,
     // @todo allow to overwrite
     overwrite = false
   ) {
@@ -103,6 +104,10 @@ export class Engine extends BaseEngine {
       path: filename,
       omitBackground: true
     });
+    // if debug is enabled, save the html
+    if (debug) {
+      await fsPromises.writeFile(filename.replace('png', 'html'), content);
+    }
     await browser.close();
   }
   setContent(filename: any, content: string | Buffer): string | Buffer {

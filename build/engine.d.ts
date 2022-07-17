@@ -8,7 +8,7 @@ export declare class Engine extends BaseEngine {
     compile(template: any, data: any): any;
     create(rootDir: string, outputDir: string, filename: any, content: string | Buffer): Promise<void>;
     overwrite(rootDir: string, outputDir: string, filename: any, content: string | Buffer): Promise<void>;
-    createOrOverwriteImage(rootDir: string, outputDir: string, filename: any, content: string | Buffer, size?: string, overwrite?: boolean): Promise<void>;
+    createOrOverwriteImage(rootDir: string, outputDir: string, filename: any, content: string | Buffer, size?: string, debug?: boolean, overwrite?: boolean): Promise<void>;
     setContent(filename: any, content: string | Buffer): string | Buffer;
     getFiles(rootDir: string, outputDir: string): Promise<any>;
 }
