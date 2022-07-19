@@ -4,8 +4,8 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/nooqta/kodyfire/blob/main/LICENSE)
 [![Twitter: anis\_marrouchi](https://img.shields.io/twitter/follow/anis\_marrouchi.svg?style=social)](https://twitter.com/anis\_marrouchi)
 
-> Generate a dynamic image for social media sharing based on HTML templates using Kodyfire cli
-![social-image-kodyfire demo](assets/social-image-kodyfire.gif)
+> Generate a dynamic image for social media sharing based on HTML templates using [Kodyfire](https://github.com/nooqta/kodyfire). This is just the beginning.
+
 ### 🏠 [Homepage](https://github.com/nooqta/kodyfire)
 
 ## Requirements
@@ -28,8 +28,8 @@ Once your project is initialized and ready for kody, run the following command t
 ```sh
 kody run -s kody-social-image.json
 ```
-### Available Templates (credits: [puppeteer-social-image](https://github.com/chrisvxd/puppeteer-social-image))
-#### `basic`
+### Available Templates 
+#### `basic` (credits: [puppeteer-social-image](https://github.com/chrisvxd/puppeteer-social-image))
 
 > Renders text on a background image.
 
@@ -44,7 +44,7 @@ kody run -s kody-social-image.json
 - `color` _string_ - Valid CSS color
 - `watermark` _string_ - (optional) text for footer
 
-#### `article`
+#### `article` (credits: [puppeteer-social-image](https://github.com/chrisvxd/puppeteer-social-image))
 
 > Display a title and subtitle on a background image, with an optional eyebrow
 
@@ -62,7 +62,7 @@ kody run -s kody-social-image.json
 - `watermark` _string_ - (optional) text for footer
 
 
-#### `fiftyfifty`
+#### `fiftyfifty` (credits: [puppeteer-social-image](https://github.com/chrisvxd/puppeteer-social-image))
 
 > Tempate with split content
 
@@ -78,7 +78,7 @@ kody run -s kody-social-image.json
 - `color` _string_ - Valid CSS color
 - `watermark` _string_ - (optional) text for footer
 
-#### `doodle`
+#### `doodle` (credits: [css-doodle](https://github.com/css-doodle/css-doodle))
 
 > Tempate using the doodle-css as background
 
@@ -169,7 +169,8 @@ Give a ⭐️ if this project helped you!
 ## Credits
 
 - [puppeteer-social-image](https://github.com/chrisvxd/puppeteer-social-image) by [chrisvxd](https://github.com/chrisvxd) Big Thanks for the provided templates.
-- [puppeteer](https://github.com/puppeteer/puppeteer) by [puppeteer](https://github.com/puppeteer)
+- [css-doodle](https://github.com/css-doodle/css-doodle) by [[chrisvxd](https://github.com/css-doodle)](https://github.com/css-doodle) Beautiful work, We are so thankful.
+- [puppeteer](https://github.com/puppeteer/puppeteer) by [puppeteer](https://github.com/puppeteer) Danke schone!
 
 ## 📝 License
 
