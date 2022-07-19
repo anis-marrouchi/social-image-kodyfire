@@ -169,7 +169,7 @@ Give a ⭐️ if this project helped you!
 ## Credits
 
 - [puppeteer-social-image](https://github.com/chrisvxd/puppeteer-social-image) by [chrisvxd](https://github.com/chrisvxd) Big Thanks for the provided templates.
-- [css-doodle](https://github.com/css-doodle/css-doodle) by [[css-doodle](https://github.com/css-doodle)](https://github.com/css-doodle) Beautiful work, We are so thankful.
+- [css-doodle](https://github.com/css-doodle/css-doodle) by [css-doodle](https://github.com/css-doodle) Beautiful work, We are so thankful.
 - [puppeteer](https://github.com/puppeteer/puppeteer) by [puppeteer](https://github.com/puppeteer) Danke schone!
 
 ## 📝 License
