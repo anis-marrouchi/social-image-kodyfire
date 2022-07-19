@@ -115,7 +115,7 @@ kody run -s kody-social-image.json
 - `title` _string_ - title text
 - `subtitle` _string_ - subtitle text
 - `logo` _string_ - URL for the logo
-- `doodle` enum - doodle background name [fakeBox, neon, seeding, strings, timeTravel,tubes, unicode]
+- `doodle` _enum_ - doodle background name [fakeBox, neon, seeding, strings, timeTravel,tubes, unicode]
 - `color` _string_ - Valid CSS color
 - `watermark` _string_ - (optional) text for footer
 
