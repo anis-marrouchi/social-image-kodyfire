@@ -78,6 +78,46 @@ kody run -s kody-social-image.json
 - `color` _string_ - Valid CSS color
 - `watermark` _string_ - (optional) text for footer
 
+#### `doodle`
+
+> Tempate using the doodle-css as background
+
+<table>
+  <tr>
+    <td>fakeBox</td>
+     <td>neon</td>
+     <td>seeding</td>
+     <td>strings</td>
+  </tr>
+  <tr>
+    <td><img src="assets/doodle-fakeBox.png" width=200></td>
+    <td><img src="assets/doodle-neon.png" width=200></td>
+    <td><img src="assets/doodle-seeding.png" width=200></td>
+    <td><img src="assets/doodle-strings.png" width=200></td>
+  </tr>
+ </table>
+
+ <table>
+  <tr>
+     <td>timeTravel</td>
+     <td>tubes</td>
+     <td>unicode</td>
+  </tr>
+  <tr>
+    <td><img src="assets/doodle-timeTravel.png" width=200></td>
+    <td><img src="assets/doodle-tubes.png" width=200></td>
+    <td><img src="assets/doodle-unicode.png" width=200></td>
+  </tr>
+ </table>
+
+##### Params
+
+- `title` _string_ - title text
+- `subtitle` _string_ - subtitle text
+- `logo` _string_ - URL for the logo
+- `doodle` enum - doodle background name [fakeBox, neon, seeding, strings, timeTravel,tubes, unicode]
+- `color` _string_ - Valid CSS color
+- `watermark` _string_ - (optional) text for footer
 
 Add the following params to your generated concepts. As an example, the final updated concepts might look like the following:
 ```json

@@ -51,7 +51,7 @@
   background-size: cover;  
   background-repeat: no-repeat;
   background-origin: center;
-  background-image: linear-gradient(135deg, transparent 0%, transparent 26%,rgba(19, 135, 203,0.6) 26%, rgba(19, 135, 203,0.6) 72%,transparent 72%, transparent 82%,rgba(6, 156, 244,0.6) 82%, rgba(6, 156, 244,0.6) 100%),linear-gradient(45deg, transparent 0%, transparent 4%,rgb(19, 135, 203) 4%, rgb(19, 135, 203) 22%,rgb(45, 92, 120) 22%, rgb(45, 92, 120) 60%,transparent 60%, transparent 100%),linear-gradient(90deg, rgb(255,255,255),rgb(255,255,255));
+  /* background-image: linear-gradient(135deg, transparent 0%, transparent 26%,rgba(19, 135, 203,0.6) 26%, rgba(19, 135, 203,0.6) 72%,transparent 72%, transparent 82%,rgba(6, 156, 244,0.6) 82%, rgba(6, 156, 244,0.6) 100%),linear-gradient(45deg, transparent 0%, transparent 4%,rgb(19, 135, 203) 4%, rgb(19, 135, 203) 22%,rgb(45, 92, 120) 22%, rgb(45, 92, 120) 60%,transparent 60%, transparent 100%),linear-gradient(90deg, rgb(255,255,255),rgb(255,255,255)); */
 }
 
 .Main {
@@ -148,20 +148,24 @@
         <!-- Credits: Gradient Magic https://www.gradientmagic.com/collection/newretro/gradient/1593803072576 -->
         <div class="Image">
           <css-doodle>
+            {{#if doodle.style}}
+              {{{doodle.style}}}
+              {{else}}
               :doodle {
-    @grid: 18 / 100vmax;
-    background: transparent;
-  }
-  --hue: calc(180 + 1.5 * @row * @col);
-  background: hsl(var(--hue), 50%, 70%);
-  margin: -.5px;
-  transition: @r(.5s) ease;
-  clip-path: polygon(@pick(
-    '0 0, 100% 0, 100% 100%',
-    '0 0, 100% 0, 0 100%',
-    '0 0, 100% 100%, 0 100%',
-    '100% 0, 100% 100%, 0 100%'
-  ));
+                  @grid: 18 / 100vmax;
+                  background: transparent;
+                }
+                --hue: calc(180 + 1.5 * @row * @col);
+                background: hsl(var(--hue), 50%, 70%);
+                margin: -.5px;
+                transition: @r(.5s) ease;
+                clip-path: polygon(@pick(
+                  '0 0, 100% 0, 100% 100%',
+                  '0 0, 100% 0, 0 100%',
+                  '0 0, 100% 100%, 0 100%',
+                  '100% 0, 100% 100%, 0 100%'
+                ));
+                {{/if}}
             </css-doodle>
         </div>
         {{/if}}

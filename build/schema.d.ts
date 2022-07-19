@@ -1,3 +1,61 @@
+export declare const doodle: {
+    type: string;
+    properties: {
+        name: {
+            type: string;
+        };
+        template: {
+            type: string;
+            enum: string[];
+        };
+        fontWeight: {
+            type: string;
+            enum: string[];
+            default: string;
+        };
+        fontSize: {
+            type: string;
+            default: string;
+        };
+        title: {
+            type: string;
+        };
+        subtitle: {
+            type: string;
+        };
+        eyebrow: {
+            type: string;
+        };
+        logo: {
+            type: string;
+        };
+        background: {
+            type: string;
+            default: string;
+        };
+        doodle: {
+            enum: string[];
+        };
+        color: {
+            type: string;
+            default: string;
+        };
+        includeWatermark: {
+            type: string;
+            default: boolean;
+        };
+        watermark: {
+            type: string;
+        };
+        size: {
+            enum: string[];
+            default: string;
+        };
+        outputDir: {
+            type: string;
+        };
+    };
+};
 export declare const concept: {
     type: string;
     properties: {
@@ -117,6 +175,67 @@ export declare const conceptArray: {
         };
     };
 };
+export declare const doodleArray: {
+    type: string;
+    items: {
+        type: string;
+        properties: {
+            name: {
+                type: string;
+            };
+            template: {
+                type: string;
+                enum: string[];
+            };
+            fontWeight: {
+                type: string;
+                enum: string[];
+                default: string;
+            };
+            fontSize: {
+                type: string;
+                default: string;
+            };
+            title: {
+                type: string;
+            };
+            subtitle: {
+                type: string;
+            };
+            eyebrow: {
+                type: string;
+            };
+            logo: {
+                type: string;
+            };
+            background: {
+                type: string;
+                default: string;
+            };
+            doodle: {
+                enum: string[];
+            };
+            color: {
+                type: string;
+                default: string;
+            };
+            includeWatermark: {
+                type: string;
+                default: boolean;
+            };
+            watermark: {
+                type: string;
+            };
+            size: {
+                enum: string[];
+                default: string;
+            };
+            outputDir: {
+                type: string;
+            };
+        };
+    };
+};
 export declare const schema: {
     type: string;
     properties: {
@@ -168,6 +287,67 @@ export declare const schema: {
                     };
                     imageUrl: {
                         type: string;
+                    };
+                    color: {
+                        type: string;
+                        default: string;
+                    };
+                    includeWatermark: {
+                        type: string;
+                        default: boolean;
+                    };
+                    watermark: {
+                        type: string;
+                    };
+                    size: {
+                        enum: string[];
+                        default: string;
+                    };
+                    outputDir: {
+                        type: string;
+                    };
+                };
+            };
+        };
+        doodle: {
+            type: string;
+            items: {
+                type: string;
+                properties: {
+                    name: {
+                        type: string;
+                    };
+                    template: {
+                        type: string;
+                        enum: string[];
+                    };
+                    fontWeight: {
+                        type: string;
+                        enum: string[];
+                        default: string;
+                    };
+                    fontSize: {
+                        type: string;
+                        default: string;
+                    };
+                    title: {
+                        type: string;
+                    };
+                    subtitle: {
+                        type: string;
+                    };
+                    eyebrow: {
+                        type: string;
+                    };
+                    logo: {
+                        type: string;
+                    };
+                    background: {
+                        type: string;
+                        default: string;
+                    };
+                    doodle: {
+                        enum: string[];
                     };
                     color: {
                         type: string;
