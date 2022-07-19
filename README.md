@@ -140,7 +140,12 @@ Add the following params to your generated concepts. As an example, the final up
       "outputDir": ""
     }
 ```
-
+## 📅 Future Features
+- Add common social post dimensions as size
+- Allow passing arguments to doodles
+- Compose doodle for dymamic backgrounds
+- Add template for most common post subjects
+- Add add meme template
 ## Run tests
 
 ```sh
