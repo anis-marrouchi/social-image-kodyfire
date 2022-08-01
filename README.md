@@ -24,7 +24,7 @@ npm install social-image-kodyfire
 ## Usage
 
 ### Method 1: As a generator
-In order to generate your artifacts. The syntax is `kody generate|g [kody] [concept]`. If you ommit `kody` and `concept` the assistant will prompt you to select them. As an example, run the following command from your terminal:
+In order to generate your artifacts, run the `generate` command. The syntax is `kody generate|g [kody] [concept]`. If you ommit `kody` and `concept` the assistant will prompt you to select them. As an example, run the following command from your terminal:
 ```sh
 kody generate react component
 ```
