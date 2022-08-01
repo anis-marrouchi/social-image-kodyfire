@@ -1,6 +1,6 @@
 {
   "name": "social-image-kodyfire",
-  "version": "0.0.6",
+ "version": "0.0.9",
   "description": "Generate dynamic images for social media sharing based on HTML templates using Kodyfire CLI",
   "main": "build/index.js",
   "scripts": {
