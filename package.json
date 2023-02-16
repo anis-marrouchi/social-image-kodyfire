@@ -1,6 +1,6 @@
 {
   "name": "social-image-kodyfire",
-"version": "0.0.17",
+  "version": "0.1.23",
   "description": "Generate dynamic images for social media sharing based on HTML templates using Kodyfire CLI",
   "main": "build/index.js",
   "scripts": {
@@ -21,11 +21,11 @@
     "@angular-devkit/core": "^12.2.3",
     "@angular-devkit/schematics": "^12.2.3",
     "ajv": "^8.6.3",
-    "basic-kodyfire": "^0.0.161",
+    "basic-kodyfire": "^0.1.7",
     "fs-extra": "^10.0.0",
     "handlebars": "^4.7.7",
     "handlebars-delimiters": "^1.0.0",
-    "kodyfire-core": "^0.0.161",
+    "kodyfire-core": "^0.1.7",
     "moment": "^2.29.1",
     "pluralize": "^8.0.0",
     "puppeteer": "^15.4.0",
@@ -35,5 +35,6 @@
     "@types/node": "^12.20.43",
     "@types/pluralize": "0.0.29",
     "copyfiles": "^2.4.1"
-  }
+  },
+  "gitHead": "939cd95d21fc7d00de379648df209fcbeae37e4f"
 }
